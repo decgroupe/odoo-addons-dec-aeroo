@@ -5,7 +5,9 @@
     'website': 'http://www.dec-industrie.com',
     'summary': '''Sale order report''',
     'depends': [
+        'company_fax',
         'sale',
+        'sale_workflow_dec',
     ],
     'data':
         [
