@@ -8,6 +8,8 @@
         'company_fax',
         'sale',
         'sale_workflow_dec',
+        'product_pack',
+        'sale_product_pack',
     ],
     'data':
         [
