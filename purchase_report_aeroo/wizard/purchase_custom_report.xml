@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="purchase_custom_report_view">
+        <field name="name">Customize purchase report</field>
+        <field name="model">purchase.custom.report</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Select Options">
+                <group>
+                    <field name="total_amounts"/>
+                    <field name="pack_hide_prices"/>
+                    <field name="pack_print"/>
+                </group>
+                <footer>
+                    <button name="print_report" string="Print quotation" 
+                        type="object" class="btn-primary" 
+                        context="{'report_type':'quotation'}"/>
+                    <button name="print_report" string="Print order" 
+                        type="object" class="btn-primary" 
+                        context="{'report_type':'order'}"/>
+                    <button special="cancel" string="Cancel" class="btn-secondary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <act_window id="act_window_purchase_custom_report"
+        name="Wizard ..."
+        src_model="purchase.order"
+        res_model="purchase.custom.report"
+        key2="client_print_multi"
+        view_mode="form"
+        target="new"
+        view_id="purchase_custom_report_view"
+    />
+
+</odoo>
