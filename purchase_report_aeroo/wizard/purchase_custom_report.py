@@ -49,7 +49,7 @@ class PurchaseCustomReport(models.TransientModel):
 
         context = dict(self.env.context)
         purchase_order = self.env['purchase.order'].browse(
-            context.get('active_id')
+            context.get('active_ids')
         )
 
         action = report.with_context(context).report_action(
@@ -57,4 +57,7 @@ class PurchaseCustomReport(models.TransientModel):
             config=False,
             data=wizard_data,
         )
+        display_name = [x.name for x in purchase_order]
+        action['display_name'] = '-'.join(display_name)
+        action['file_name'] = action['display_name']
         return action
