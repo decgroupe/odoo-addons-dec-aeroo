@@ -59,6 +59,7 @@ class PurchaseOrder(models.Model):
                 price_subtotal=ol.price_subtotal,
                 price_unit=ol.price_unit,
                 taxes_id=ol.taxes_id,
+                date_planned=ol.date_planned,
             )
 
             # Check if line should be hidden based on wizard data
