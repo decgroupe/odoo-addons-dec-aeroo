@@ -9,6 +9,7 @@
         'sale',
         'product_pack',
         'sale_product_pack',
+        'dec_report_aeroo',
     ],
     'data':
         [

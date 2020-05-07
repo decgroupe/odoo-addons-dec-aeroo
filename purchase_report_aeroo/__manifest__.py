@@ -8,6 +8,7 @@
         'company_fax',
         'purchase',
         'product_pack',
+        'dec_report_aeroo',
     ],
     'data':
         [
