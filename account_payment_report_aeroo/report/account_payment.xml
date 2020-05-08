@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.actions.report" id="account_payment_report">
+        <field name="name">📄Payment summary</field>
+        <field name="type">ir.actions.report</field>
+        <field name="model">account.payment</field>
+        <field name="report_name">account_payment_report</field>
+        <field name="report_type">aeroo</field>
+        <field name="aeroo_in_format">odt</field>
+        <field name="aeroo_out_format_id" ref="report_aeroo.aeroo_mimetype_pdf_odt"/>
+        <field name="aeroo_template_source">file</field>
+        <field name="aeroo_lang_eval">o.partner_id.lang</field>
+        <field name="aeroo_country_eval">o.partner_id.country_id</field>
+        <field name="aeroo_currency_eval" eval="None"/>
+        <field name="aeroo_template_path">account_payment_report_aeroo/report/account_payment.odt</field>
+        <field name="attachment_use" eval="False"/>
+        <!-- Binding fields are only used to create an entry in the Print menu 
+                Assigning them is like executing IrActionsReport.create_action() -->
+        <field name="binding_model_id" ref="account.model_account_payment" />
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>
