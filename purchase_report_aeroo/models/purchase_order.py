@@ -107,7 +107,10 @@ class PurchaseOrder(models.Model):
             # Re-format default line name from supplier product data
             # If they don't match then copy line.name (was line.notes in
             # older versions) to line.notes
-            supplier_product = f'[{line.supplier_code}] {line.supplier_name}'
+            supplier_product = '[{0}] {1}'.format(
+                line.supplier_code,
+                line.supplier_name,
+            )
             if line.name != supplier_product:
                 line.notes = line.name
             else:
