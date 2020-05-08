@@ -27,7 +27,12 @@ def format_lang(report, value, date=False, dp=False, currency_obj=False):
 
 
 @aeroo_util('format_address')
-def format_address(report, partner_id):
+def format_address(report, partner_id, address_type=None):
+
+    if partner_id and address_type:
+        contact_id = partner_id.address_get().get(address_type, False)
+        if contact_id:
+            partner_id = partner_id.env['res.partner'].browse(contact_id)
 
     # Create a static class to store local variables accessible
     # from nested functions
@@ -116,3 +121,14 @@ def format_footer(report, company_id):
             r.append(_('VAT {}').format(company_id.vat))
         res = ' - '.join(r)
         return res
+
+@aeroo_util('print_address_type')
+def print_address_type(report, address_type):
+    result = 'Adresse:'
+    if address_type == 'invoice':
+        result = 'Adresse de facturation:'
+    if address_type == 'delivery':
+        result = 'Adresse de livraison:'
+    if address_type == 'contact':
+        result = 'Adresse de contact:'
+    return result
