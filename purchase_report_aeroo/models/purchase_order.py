@@ -79,6 +79,10 @@ class PurchaseOrder(models.Model):
                 line.hide_price = pack_hide_prices
             else:
                 line.hide_price = False
+            
+            # Set default product code and name
+            line.supplier_code = line.product_id.default_code
+            line.supplier_name = line.product_id.name
 
             # Get supplier info from current partner_id
             supplier_info = line.product_id.seller_ids.filtered(
@@ -98,11 +102,8 @@ class PurchaseOrder(models.Model):
 
             # Retrieve product code and name from supplier
             if supplier_info:
-                line.supplier_code = supplier_info[0].product_code or ''
-                line.supplier_name = supplier_info[0].product_name or ''
-            else:
-                line.supplier_code = line.product_id.default_code
-                line.supplier_name = line.product_id.name
+                line.supplier_code = supplier_info[0].product_code or line.supplier_code
+                line.supplier_name = supplier_info[0].product_name or line.supplier_name
 
             # Re-format default line name from supplier product data
             # If they don't match then copy line.name (was line.notes in
