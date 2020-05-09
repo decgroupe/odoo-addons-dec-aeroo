@@ -21,6 +21,9 @@ class PurchaseOrder(models.Model):
     _inherit = "purchase.order"
 
     def print_purchase_order_lines(self, data=None):
+        if data is None:
+            data = {}
+
         def _totalize_printed_lines(line, lines):
             for sl in lines:
                 if (sl.product_id == line.product_id) \
@@ -34,10 +37,9 @@ class PurchaseOrder(models.Model):
             return False
 
         # Get back data from wizard
-        if data:
-            total_amounts = data.get('total_amounts')
-            pack_print = data.get('pack_print', 'default')
-            pack_hide_prices = data.get('pack_hide_prices')
+        total_amounts = data.get('total_amounts', True)
+        pack_print = data.get('pack_print', 'default')
+        pack_hide_prices = data.get('pack_hide_prices', True)
 
         lines = []
         for ol in self.order_line:
