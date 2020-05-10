@@ -16,6 +16,14 @@
 from odoo import _
 from odoo.addons.report_aeroo.extra_functions import aeroo_util
 from odoo.tools.misc import formatLang, format_date
+from types import SimpleNamespace
+
+
+@aeroo_util('set')
+def set(report, name, value):
+    if not 't' in report.env.context:
+        report.env.context['t'] = SimpleNamespace()
+    setattr(report.env.context['t'], name, value)
 
 
 @aeroo_util('formatLang')
@@ -121,6 +129,7 @@ def format_footer(report, company_id):
             r.append(_('VAT {}').format(company_id.vat))
         res = ' - '.join(r)
         return res
+
 
 @aeroo_util('print_address_type')
 def print_address_type(report, address_type):
