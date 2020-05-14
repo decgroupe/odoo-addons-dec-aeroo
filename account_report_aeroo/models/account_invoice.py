@@ -13,11 +13,11 @@
 # from DEC SARL.
 # Written by Yann Papouin <y.papouin@dec-industrie.com>, May 2020
 
-from odoo import api, fields, models
+from odoo import models, api
 
 
-class AccountPayment(models.Model):
-    _inherit = 'account.payment'
+class AccounInvoice(models.Model):
+    _inherit = "account.invoice"
 
     @api.multi
     def _get_aeroo_report_filename(self):

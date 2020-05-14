@@ -14,11 +14,17 @@
 # Written by Yann Papouin <y.papouin@dec-industrie.com>, May 2020
 
 from types import SimpleNamespace
-from odoo import models
+from odoo import models, api
 
 
 class PurchaseOrder(models.Model):
     _inherit = "purchase.order"
+
+    @api.multi
+    def _get_aeroo_report_filename(self):
+        names = [x.name for x in self]
+        res = '-'.join(names)
+        return res
 
     def print_purchase_order_lines(self, data=None):
         if data is None:
@@ -81,7 +87,7 @@ class PurchaseOrder(models.Model):
                 line.hide_price = pack_hide_prices
             else:
                 line.hide_price = False
-            
+
             # Set default product code and name
             line.supplier_code = line.product_id.default_code
             line.supplier_name = line.product_id.name
@@ -104,8 +110,10 @@ class PurchaseOrder(models.Model):
 
             # Retrieve product code and name from supplier
             if supplier_info:
-                line.supplier_code = supplier_info[0].product_code or line.supplier_code
-                line.supplier_name = supplier_info[0].product_name or line.supplier_name
+                line.supplier_code = supplier_info[
+                    0].product_code or line.supplier_code
+                line.supplier_name = supplier_info[
+                    0].product_name or line.supplier_name
 
             # Re-format default line name from supplier product data
             # If they don't match then copy line.name (was line.notes in

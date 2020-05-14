@@ -57,7 +57,4 @@ class PurchaseCustomReport(models.TransientModel):
             config=False,
             data=wizard_data,
         )
-        display_name = [x.name for x in purchase_order]
-        action['display_name'] = '-'.join(display_name)
-        action['file_name'] = action['display_name']
         return action
