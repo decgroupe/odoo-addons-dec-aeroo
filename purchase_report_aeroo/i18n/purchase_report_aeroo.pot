@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-14 15:05+0000\n"
-"PO-Revision-Date: 2020-05-14 15:05+0000\n"
+"POT-Creation-Date: 2020-05-26 11:51+0000\n"
+"PO-Revision-Date: 2020-05-26 11:51+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -48,17 +48,17 @@ msgstr "Nom affiché"
 #. module: purchase_report_aeroo
 #: selection:purchase.custom.report,pack_print:0
 msgid "Hide pack content"
-msgstr ""
+msgstr "Cacher le contenu du pack"
 
 #. module: purchase_report_aeroo
 #: model:ir.model.fields,field_description:purchase_report_aeroo.field_purchase_custom_report__pack_hide_prices
 msgid "Hide pack line prices"
-msgstr ""
+msgstr "Cacher les prix des lignes du pack"
 
 #. module: purchase_report_aeroo
 #: model:ir.model.fields,help:purchase_report_aeroo.field_purchase_custom_report__pack_hide_prices
 msgid "Hide prices if equal to zero"
-msgstr ""
+msgstr "Cacher les prix si ceux-ci sont nuls"
 
 #. module: purchase_report_aeroo
 #: model:ir.model.fields,field_description:purchase_report_aeroo.field_purchase_custom_report__id
@@ -83,17 +83,17 @@ msgstr "Dernière mise à jour le"
 #. module: purchase_report_aeroo
 #: model:ir.model.fields,field_description:purchase_report_aeroo.field_purchase_custom_report__pack_print
 msgid "Pack printing"
-msgstr ""
+msgstr "Impression du pack"
 
 #. module: purchase_report_aeroo
 #: model_terms:ir.ui.view,arch_db:purchase_report_aeroo.purchase_custom_report_view
 msgid "Print order"
-msgstr ""
+msgstr "Imprimer la commande"
 
 #. module: purchase_report_aeroo
 #: model_terms:ir.ui.view,arch_db:purchase_report_aeroo.purchase_custom_report_view
 msgid "Print quotation"
-msgstr ""
+msgstr "Imprimer le devis"
 
 #. module: purchase_report_aeroo
 #: model:ir.model,name:purchase_report_aeroo.model_purchase_order
@@ -103,30 +103,30 @@ msgstr "Commande fournisseur"
 #. module: purchase_report_aeroo
 #: model_terms:ir.ui.view,arch_db:purchase_report_aeroo.purchase_custom_report_view
 msgid "Select Options"
-msgstr ""
+msgstr "Choisir les options"
 
 #. module: purchase_report_aeroo
 #: selection:purchase.custom.report,pack_print:0
 msgid "Show full pack content"
-msgstr ""
+msgstr "Afficher le contenu complet du pack"
 
 #. module: purchase_report_aeroo
 #: model:ir.model.fields,field_description:purchase_report_aeroo.field_purchase_custom_report__total_amounts
 msgid "Total the amounts"
-msgstr ""
+msgstr "Additionner les montants"
 
 #. module: purchase_report_aeroo
 #: model:ir.model.fields,help:purchase_report_aeroo.field_purchase_custom_report__total_amounts
 msgid "Total the amounts for lines with same product, uom, unit price and notes"
-msgstr ""
+msgstr "Additionner les montants des lignes qui possèdent les mêmes articles, unités, prix et description"
 
 #. module: purchase_report_aeroo
 #: model:ir.actions.report,name:purchase_report_aeroo.purchase_order_report
 msgid "📄Purchase Order"
-msgstr ""
+msgstr "📄Commande fournisseur"
 
 #. module: purchase_report_aeroo
 #: model:ir.actions.act_window,name:purchase_report_aeroo.act_window_purchase_custom_report
 msgid "🧙‍♂️Wizard ..."
-msgstr ""
+msgstr "🧙‍♂️Assistant ..."
 
