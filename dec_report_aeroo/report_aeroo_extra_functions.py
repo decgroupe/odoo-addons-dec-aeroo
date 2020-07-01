@@ -21,9 +21,20 @@ from types import SimpleNamespace
 
 @aeroo_util('set')
 def set(report, name, value):
+    '''
+    <set('partner', o.partner_id or (o.move_lines and o.move_lines[0].partner_id) or False)>
+    <if test="t.partner">
+    '''
     if not 't' in report.env.context:
         report.env.context['t'] = SimpleNamespace()
     setattr(report.env.context['t'], name, value)
+
+
+@aeroo_util('get_selection_value')
+def get_selection_value(report, model, field_name, field_val):
+    selections = report.env[model].fields_get()[field_name]['selection']
+    res = dict(selections)[field_val]
+    return res
 
 
 @aeroo_util('formatLang')
