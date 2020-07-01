@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="stock_picking_custom_report_view">
+        <field name="name">Customize stock picking report</field>
+        <field name="model">stock.picking.custom.report</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Select Options">
+                <group>
+                    <field name="message"/>
+                </group>
+                <footer>
+                    <button name="print_report" string="Print picking" 
+                        type="object" class="btn-primary" 
+                        context="{}"/>
+                    <button special="cancel" string="Cancel" class="btn-secondary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <act_window id="act_window_stock_picking_custom_report"
+        name="🧙‍♂️Wizard ..."
+        src_model="stock.picking"
+        res_model="stock.picking.custom.report"
+        key2="client_print_multi"
+        view_mode="form"
+        target="new"
+        view_id="stock_picking_custom_report_view"
+    />
+
+</odoo>

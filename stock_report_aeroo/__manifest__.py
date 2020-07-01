@@ -12,6 +12,7 @@
     'data':
         [
             'report/stock_picking.xml',
+            'wizard/stock_picking_custom_report.xml',
         ],
     'installable': True
 }
