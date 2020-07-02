@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="mrp_production_custom_report_view">
+        <field name="name">Customize manufacturing order report</field>
+        <field name="model">mrp.production.custom.report</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Select Options">
+                <group>
+                    <field name="message"/>
+                </group>
+                <footer>
+                    <button name="print_report" string="Print picking" 
+                        type="object" class="btn-primary" 
+                        context="{}"/>
+                    <button special="cancel" string="Cancel" class="btn-secondary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <act_window id="act_window_mrp_production_custom_report"
+        name="🧙‍♂️Wizard ..."
+        src_model="mrp.production"
+        res_model="mrp.production.custom.report"
+        key2="client_print_multi"
+        view_mode="form"
+        target="new"
+        view_id="mrp_production_custom_report_view"
+    />
+
+</odoo>
