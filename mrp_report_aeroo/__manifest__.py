@@ -6,7 +6,12 @@
     'summary': '''Production report''',
     'depends': [
         'company_fax',
+        'product_location',
         'mrp',
+        'mrp_workcenter',
+        'mrp_traceability',
+        'mrp_note',
+        'mrp_workflow_dec',
         'dec_report_aeroo',
     ],
     'data':
