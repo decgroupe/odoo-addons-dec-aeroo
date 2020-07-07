@@ -53,17 +53,19 @@ class MrpProduction(models.Model):
             line = SimpleNamespace(
                 pack=False,
                 level=0,
+                move=move,
                 name=move.name,
                 product_id=move.product_id,
                 manufacturer=move.product_id.print_manufacturer(),
-                product_qty=move.product_qty,
+                product_uom_qty=move.product_uom_qty,
                 product_uom=move.product_uom,
+                reserved_availability=move.reserved_availability,
                 date_expected=move.date_expected,
                 picking_id=move.picking_id,
+                reference=move.reference,
                 state=move.state,
-                status_received=False,
-                status_dedicated=False,
-                status_status='???',
+                received=(move.reserved_availability == move.product_uom_qty),
+                status=move.get_mrp_status(False),
             )
             lines.append(line)
 

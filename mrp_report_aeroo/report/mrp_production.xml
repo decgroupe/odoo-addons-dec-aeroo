@@ -11,8 +11,8 @@
         <field name="aeroo_in_format">odt</field>
         <field name="aeroo_out_format_id" ref="report_aeroo.aeroo_mimetype_pdf_odt"/>
         <field name="aeroo_template_source">file</field>
-        <field name="aeroo_lang_eval">o.partner_id.lang</field>
-        <field name="aeroo_country_eval">o.partner_id.country_id</field>
+        <field name="aeroo_lang_eval">user.lang</field>
+        <field name="aeroo_country_eval">user.country_id</field>
         <field name="aeroo_currency_eval" eval="None"/>
         <field name="aeroo_template_path">mrp_report_aeroo/report/mrp_production.odt</field>
         <field name="attachment_use" eval="False"/>
