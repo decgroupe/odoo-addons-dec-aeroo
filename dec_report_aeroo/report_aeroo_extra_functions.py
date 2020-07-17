@@ -42,77 +42,77 @@ def format_address(report, partner_id, address_type=None):
         if contact_id:
             partner_id = partner_id.env['res.partner'].browse(contact_id)
 
-    # Create a static class to store local variables accessible
+    # Create a basic object to store local variables accessible
     # from nested functions
-    class local:
-        result = ''
-        newline = False
-        last_level = 0
+    renderer = SimpleNamespace()
+    renderer.result = ''
+    renderer.newline = False
+    renderer.last_level = 0
 
     def add_new_line(level):
-        if local.newline and level > local.last_level:
-            while local.newline:
-                local.last_level = level
-                local.result += '\n'
-                if isinstance(local.newline, int):
-                    local.newline -= 1
+        if renderer.newline and level > renderer.last_level:
+            while renderer.newline:
+                renderer.last_level = level
+                renderer.result += '\n'
+                if isinstance(renderer.newline, int):
+                    renderer.newline -= 1
                 else:
-                    local.newline = False
+                    renderer.newline = False
 
     if partner_id:
         if partner_id.commercial_company_name:
             add_new_line(1)
-            local.result += partner_id.commercial_company_name
-            local.newline = True
+            renderer.result += partner_id.commercial_company_name
+            renderer.newline = True
 
         if partner_id.name != partner_id.commercial_company_name:
             if partner_id.title:
                 add_new_line(1)
-                local.result += partner_id.title.name + ' '
-                local.newline = True
+                renderer.result += partner_id.title.name + ' '
+                renderer.newline = True
             if partner_id.name:
                 add_new_line(1)
-                local.result += partner_id.name
-                local.newline = True
+                renderer.result += partner_id.name
+                renderer.newline = True
 
         if partner_id.street:
             add_new_line(2)
-            local.result += partner_id.street
-            local.newline = True
+            renderer.result += partner_id.street
+            renderer.newline = True
         if partner_id.street2:
             add_new_line(3)
-            local.result += partner_id.street2
-            local.newline = True
+            renderer.result += partner_id.street2
+            renderer.newline = True
         if partner_id.zip:
             add_new_line(4)
-            local.result += partner_id.zip + ' '
-            local.newline = True
+            renderer.result += partner_id.zip + ' '
+            renderer.newline = True
         if partner_id.city:
             add_new_line(4)
-            local.result += partner_id.city.upper()
-            local.newline = True
+            renderer.result += partner_id.city.upper()
+            renderer.newline = True
         if partner_id.state_id:
             add_new_line(5)
-            local.result += partner_id.state_id.name.upper() + ' '
-            local.newline = True
+            renderer.result += partner_id.state_id.name.upper() + ' '
+            renderer.newline = True
         if partner_id.country_id:
             add_new_line(5)
-            local.result += partner_id.country_id.name.upper()
-            local.newline = True
-        local.newline = 2
+            renderer.result += partner_id.country_id.name.upper()
+            renderer.newline = True
+        renderer.newline = 2
         if partner_id.phone:
             add_new_line(6)
-            local.result += u'Tél.: ' + partner_id.phone
-            local.newline = True
+            renderer.result += u'Tél.: ' + partner_id.phone
+            renderer.newline = True
         if partner_id.fax:
             add_new_line(7)
-            local.result += 'Fax: ' + partner_id.fax
-            local.newline = True
+            renderer.result += 'Fax: ' + partner_id.fax
+            renderer.newline = True
     if partner_id and partner_id.vat:
         add_new_line(8)
-        local.result += 'TVA: ' + partner_id.vat
+        renderer.result += 'TVA: ' + partner_id.vat
 
-    return local.result
+    return renderer.result
 
 
 @aeroo_util('format_footer')
