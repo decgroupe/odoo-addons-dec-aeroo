@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 08:23+0000\n"
-"PO-Revision-Date: 2020-05-27 08:23+0000\n"
+"POT-Creation-Date: 2020-07-28 20:01+0000\n"
+"PO-Revision-Date: 2020-07-28 20:01+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -33,12 +33,12 @@ msgstr "Créé le"
 #. module: purchase_report_aeroo
 #: model:ir.model,name:purchase_report_aeroo.model_purchase_custom_report
 msgid "Customize purchase report"
-msgstr ""
+msgstr "Rapport d'achat personnalisé"
 
 #. module: purchase_report_aeroo
 #: selection:purchase.custom.report,pack_print:0
 msgid "Default (by line setting)"
-msgstr ""
+msgstr "Par défaut (configuré par ligne)"
 
 #. module: purchase_report_aeroo
 #: model:ir.model.fields,field_description:purchase_report_aeroo.field_purchase_custom_report__display_name
@@ -73,7 +73,7 @@ msgstr "Dernière modification le"
 #. module: purchase_report_aeroo
 #: model:ir.model.fields,field_description:purchase_report_aeroo.field_purchase_custom_report__write_uid
 msgid "Last Updated by"
-msgstr "Dernière mise à jour par"
+msgstr "Dernière modification par"
 
 #. module: purchase_report_aeroo
 #: model:ir.model.fields,field_description:purchase_report_aeroo.field_purchase_custom_report__write_date
@@ -98,7 +98,7 @@ msgstr "Imprimer le devis"
 #. module: purchase_report_aeroo
 #: model:ir.model,name:purchase_report_aeroo.model_purchase_order
 msgid "Purchase Order"
-msgstr "Commande fournisseur"
+msgstr "Commande d'achat"
 
 #. module: purchase_report_aeroo
 #: model_terms:ir.ui.view,arch_db:purchase_report_aeroo.purchase_custom_report_view
@@ -108,7 +108,7 @@ msgstr "Choisir les options"
 #. module: purchase_report_aeroo
 #: selection:purchase.custom.report,pack_print:0
 msgid "Show full pack content"
-msgstr "Afficher le contenu complet du pack"
+msgstr "Afficher tout le pack"
 
 #. module: purchase_report_aeroo
 #: model:ir.model.fields,field_description:purchase_report_aeroo.field_purchase_custom_report__total_amounts
