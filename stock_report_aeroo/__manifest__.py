@@ -9,6 +9,7 @@
         'stock',
         'stock_mrp',
         'dec_report_aeroo',
+        'sale_report_aeroo',
     ],
     'data':
         [
