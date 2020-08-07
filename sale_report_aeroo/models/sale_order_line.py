@@ -6,5 +6,9 @@ from odoo import models
 
 
 class SaleOrderLine(models.Model):
-    _inherit = ['sale.order.line', 'report.line.mixin']
+    _inherit = [
+        'sale.order.line',
+        'report.line.mixin',
+        'report.orderline.mixin',
+    ]
     _name = 'sale.order.line'
