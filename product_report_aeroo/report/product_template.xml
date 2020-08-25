@@ -16,6 +16,7 @@
         <field name="aeroo_currency_eval" eval="None"/>
         <field name="aeroo_template_path">product_report_aeroo/report/product_template.odt</field>
         <field name="attachment_use" eval="False"/>
+        <field name="multi" eval="True"/>
         <!-- Binding fields are only used to create an entry in the Print menu 
                 Assigning them is like executing IrActionsReport.create_action() -->
         <field name="binding_model_id" ref="product.model_product_template" />

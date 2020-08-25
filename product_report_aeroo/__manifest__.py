@@ -7,6 +7,7 @@
     'depends': [
         'company_fax',
         'product',
+        'product_seller',
         'dec_report_aeroo',
     ],
     'data':
