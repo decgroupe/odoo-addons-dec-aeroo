@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-28 20:03+0000\n"
-"PO-Revision-Date: 2020-07-28 20:03+0000\n"
+"POT-Creation-Date: 2020-09-25 17:06+0000\n"
+"PO-Revision-Date: 2020-09-25 17:06+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 #. module: stock_report_aeroo
 #: model:ir.model.fields,help:stock_report_aeroo.field_stock_picking_custom_report__message
 msgid "Allow to display a custom text"
-msgstr ""
+msgstr "Permet d'afficher du texte personnalisé"
 
 #. module: stock_report_aeroo
 #: model_terms:ir.ui.view,arch_db:stock_report_aeroo.stock_picking_custom_report_view
@@ -38,32 +38,32 @@ msgstr "Créé le"
 #. module: stock_report_aeroo
 #: model:ir.model.fields,field_description:stock_report_aeroo.field_stock_picking_custom_report__message
 msgid "Custom message"
-msgstr ""
+msgstr "Message personnalisé"
 
 #. module: stock_report_aeroo
 #: model:ir.model,name:stock_report_aeroo.model_stock_picking_custom_report
 msgid "Customize stock picking report"
-msgstr ""
+msgstr "Personnaliser le bon de transfert"
 
 #. module: stock_report_aeroo
 #: model:ir.model.fields,field_description:stock_report_aeroo.field_stock_picking_custom_report__display_name
 msgid "Display Name"
-msgstr "Nom affiché"
+msgstr "Nom d’affichage"
 
 #. module: stock_report_aeroo
 #: model:ir.model.fields,field_description:stock_report_aeroo.field_stock_picking_custom_report__id
 msgid "ID"
-msgstr ""
+msgstr "Id."
 
 #. module: stock_report_aeroo
 #: model:ir.model.fields,field_description:stock_report_aeroo.field_stock_picking_custom_report____last_update
 msgid "Last Modified on"
-msgstr "Dernière modification le"
+msgstr ""
 
 #. module: stock_report_aeroo
 #: model:ir.model.fields,field_description:stock_report_aeroo.field_stock_picking_custom_report__write_uid
 msgid "Last Updated by"
-msgstr "Dernière modification par"
+msgstr "Dernière mise à jour par"
 
 #. module: stock_report_aeroo
 #: model:ir.model.fields,field_description:stock_report_aeroo.field_stock_picking_custom_report__write_date
@@ -78,17 +78,22 @@ msgstr "Ordres de fabrication"
 #. module: stock_report_aeroo
 #: model:ir.model.fields,field_description:stock_report_aeroo.field_stock_picking__original_creator_user_id
 msgid "Original creator"
-msgstr ""
+msgstr "Créateur"
 
 #. module: stock_report_aeroo
 #: model_terms:ir.ui.view,arch_db:stock_report_aeroo.stock_picking_custom_report_view
 msgid "Print picking"
-msgstr ""
+msgstr "Imprimer le bon"
 
 #. module: stock_report_aeroo
 #: model_terms:ir.ui.view,arch_db:stock_report_aeroo.stock_picking_custom_report_view
 msgid "Select Options"
 msgstr "Choisir les options"
+
+#. module: stock_report_aeroo
+#: model:ir.model,name:stock_report_aeroo.model_stock_move
+msgid "Stock Move"
+msgstr "Mouvement de stock"
 
 #. module: stock_report_aeroo
 #: model:ir.model,name:stock_report_aeroo.model_stock_picking
@@ -98,7 +103,7 @@ msgstr ""
 #. module: stock_report_aeroo
 #: model:ir.actions.report,name:stock_report_aeroo.stock_picking_report
 msgid "📄Stock Picking"
-msgstr ""
+msgstr "📄Bon de transfert"
 
 #. module: stock_report_aeroo
 #: model:ir.actions.act_window,name:stock_report_aeroo.act_window_stock_picking_custom_report

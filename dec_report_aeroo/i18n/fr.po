@@ -6,15 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-14 15:04+0000\n"
-"PO-Revision-Date: 2020-05-14 14:44+0000\n"
+"POT-Creation-Date: 2020-09-25 16:47+0000\n"
+"PO-Revision-Date: 2020-09-25 19:54+0200\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
-"Language: \n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
+"X-Generator: Poedit 2.3.1\n"
 
 #. module: dec_report_aeroo
 #: code:addons/dec_report_aeroo/report_aeroo_extra_functions.py:127
@@ -23,47 +24,50 @@ msgid "APE {}"
 msgstr "APE {}"
 
 #. module: dec_report_aeroo
-#: model:ir.model,name:dec_report_aeroo.model_report_line_mixin
-msgid "Common fields for report rendering"
-msgstr "Champs communs pour le rendu des rapports"
-
-#. module: dec_report_aeroo
 #: model:ir.model.fields,field_description:dec_report_aeroo.field_report_line_mixin__display_name
+#: model:ir.model.fields,field_description:dec_report_aeroo.field_report_orderline_mixin__display_name
 msgid "Display Name"
 msgstr "Nom affiché"
 
 #. module: dec_report_aeroo
-#: model:ir.model.fields,field_description:dec_report_aeroo.field_report_line_mixin__report_hide_line
+#: model:ir.model.fields,field_description:dec_report_aeroo.field_report_orderline_mixin__report_hide_line
 msgid "Hide Line"
 msgstr "Cacher la ligne"
 
 #. module: dec_report_aeroo
-#: model:ir.model.fields,field_description:dec_report_aeroo.field_report_line_mixin__report_hide_price
+#: model:ir.model.fields,field_description:dec_report_aeroo.field_report_orderline_mixin__report_hide_price
 msgid "Hide Price"
 msgstr "Cacher le prix"
 
 #. module: dec_report_aeroo
-#: model:ir.model.fields,field_description:dec_report_aeroo.field_report_line_mixin__report_hide_uom
+#: model:ir.model.fields,field_description:dec_report_aeroo.field_report_orderline_mixin__report_hide_uom
 msgid "Hide Uom"
 msgstr "Cacher l'unité"
 
 #. module: dec_report_aeroo
 #: model:ir.model.fields,field_description:dec_report_aeroo.field_report_line_mixin__id
+#: model:ir.model.fields,field_description:dec_report_aeroo.field_report_orderline_mixin__id
 msgid "ID"
 msgstr "ID"
 
 #. module: dec_report_aeroo
 #: model:ir.model.fields,field_description:dec_report_aeroo.field_report_line_mixin____last_update
+#: model:ir.model.fields,field_description:dec_report_aeroo.field_report_orderline_mixin____last_update
 msgid "Last Modified on"
 msgstr "Dernière modification le"
 
 #. module: dec_report_aeroo
-#: model:ir.model.fields,help:dec_report_aeroo.field_report_line_mixin__report_hide_price
+#: model:ir.model,name:dec_report_aeroo.model_report_line_mixin
+msgid "Name and note fields for report rendering"
+msgstr "Champs \"Nom\" et \"Notes\" pour le rendu des rapports"
+
+#. module: dec_report_aeroo
+#: model:ir.model.fields,help:dec_report_aeroo.field_report_orderline_mixin__report_hide_price
 msgid "Only hide price of this line (when equal to zero in most cases)"
 msgstr "Cacher seulement le prix de cette ligne (quand égal à zéro dans la plupart des cas)"
 
 #. module: dec_report_aeroo
-#: model:ir.model.fields,help:dec_report_aeroo.field_report_line_mixin__report_hide_uom
+#: model:ir.model.fields,help:dec_report_aeroo.field_report_orderline_mixin__report_hide_uom
 msgid "Only hide units of this line"
 msgstr "Cacher seulement l'unité de vente de cette ligne"
 
@@ -78,7 +82,7 @@ msgid "Report Note"
 msgstr "Note du rapport"
 
 #. module: dec_report_aeroo
-#: model:ir.model.fields,field_description:dec_report_aeroo.field_report_line_mixin__report_subtotal
+#: model:ir.model.fields,field_description:dec_report_aeroo.field_report_orderline_mixin__report_subtotal
 msgid "Report Subtotal"
 msgstr "Sous-total du rapport"
 
@@ -89,7 +93,12 @@ msgid "SIRET {}"
 msgstr "SIRET {}"
 
 #. module: dec_report_aeroo
-#: model:ir.model.fields,help:dec_report_aeroo.field_report_line_mixin__report_hide_line
+#: model:ir.model,name:dec_report_aeroo.model_report_orderline_mixin
+msgid "Subtotal and Hide fields for order report rendering"
+msgstr "Champs \"Sous-total\" et \"Cacher\" pour le rendu des rapports"
+
+#. module: dec_report_aeroo
+#: model:ir.model.fields,help:dec_report_aeroo.field_report_orderline_mixin__report_hide_line
 msgid "This allows the seller to hide the entire printed line"
 msgstr "Ceci permet d'enlever complétement cette ligne du rapport"
 

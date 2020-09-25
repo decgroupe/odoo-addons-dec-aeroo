@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-28 20:03+0000\n"
+"POT-Creation-Date: 2020-09-25 17:06+0000\n"
 "PO-Revision-Date: 2020-07-29 15:21+0200\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
-"Language: fr\n"
 "X-Generator: Poedit 2.2.3\n"
 
 #. module: stock_report_aeroo
@@ -91,6 +91,11 @@ msgstr "Imprimer le bon"
 #: model_terms:ir.ui.view,arch_db:stock_report_aeroo.stock_picking_custom_report_view
 msgid "Select Options"
 msgstr "Choisir les options"
+
+#. module: stock_report_aeroo
+#: model:ir.model,name:stock_report_aeroo.model_stock_move
+msgid "Stock Move"
+msgstr "Mouvement de stock"
 
 #. module: stock_report_aeroo
 #: model:ir.model,name:stock_report_aeroo.model_stock_picking
