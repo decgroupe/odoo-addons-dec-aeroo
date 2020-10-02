@@ -1,0 +1,107 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* mrp_report_aeroo
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-02 21:44+0000\n"
+"PO-Revision-Date: 2020-10-02 21:44+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mrp_report_aeroo
+#: model:ir.model.fields,help:mrp_report_aeroo.field_mrp_production_custom_report__message
+msgid "Allow to display a custom text"
+msgstr "Permet d'afficher du texte personnalisé"
+
+#. module: mrp_report_aeroo
+#: model_terms:ir.ui.view,arch_db:mrp_report_aeroo.mrp_production_custom_report_view
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: mrp_report_aeroo
+#: model:ir.model.fields,field_description:mrp_report_aeroo.field_mrp_production_custom_report__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: mrp_report_aeroo
+#: model:ir.model.fields,field_description:mrp_report_aeroo.field_mrp_production_custom_report__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: mrp_report_aeroo
+#: model:ir.model.fields,field_description:mrp_report_aeroo.field_mrp_production_custom_report__message
+msgid "Custom message"
+msgstr "Message personnalisé"
+
+#. module: mrp_report_aeroo
+#: model:ir.model,name:mrp_report_aeroo.model_mrp_production_custom_report
+msgid "Customize manufacturing order report"
+msgstr ""
+
+#. module: mrp_report_aeroo
+#: model:ir.model.fields,field_description:mrp_report_aeroo.field_mrp_production_custom_report__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: mrp_report_aeroo
+#: model:ir.model.fields,field_description:mrp_report_aeroo.field_mrp_production__finished_picking_dates
+msgid "Finished Pickings dates"
+msgstr ""
+
+#. module: mrp_report_aeroo
+#: model:ir.model.fields,field_description:mrp_report_aeroo.field_mrp_production_custom_report__id
+msgid "ID"
+msgstr ""
+
+#. module: mrp_report_aeroo
+#: model:ir.model.fields,field_description:mrp_report_aeroo.field_mrp_production_custom_report____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: mrp_report_aeroo
+#: model:ir.model.fields,field_description:mrp_report_aeroo.field_mrp_production_custom_report__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: mrp_report_aeroo
+#: model:ir.model.fields,field_description:mrp_report_aeroo.field_mrp_production_custom_report__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: mrp_report_aeroo
+#: model_terms:ir.ui.view,arch_db:mrp_report_aeroo.mrp_production_custom_report_view
+msgid "Print picking"
+msgstr "Imprimer le bon"
+
+#. module: mrp_report_aeroo
+#: model:ir.model,name:mrp_report_aeroo.model_product_product
+msgid "Product"
+msgstr "Article"
+
+#. module: mrp_report_aeroo
+#: model:ir.model,name:mrp_report_aeroo.model_mrp_production
+msgid "Production Order"
+msgstr ""
+
+#. module: mrp_report_aeroo
+#: model_terms:ir.ui.view,arch_db:mrp_report_aeroo.mrp_production_custom_report_view
+msgid "Select Options"
+msgstr "Choisir les options"
+
+#. module: mrp_report_aeroo
+#: model:ir.actions.report,name:mrp_report_aeroo.mrp_production_report
+msgid "📄Manufacturing Order"
+msgstr ""
+
+#. module: mrp_report_aeroo
+#: model:ir.actions.act_window,name:mrp_report_aeroo.act_window_mrp_production_custom_report
+msgid "🧙‍♂️Wizard ..."
+msgstr "🧙‍♂️Assistant ..."
+
