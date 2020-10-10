@@ -5,7 +5,13 @@
 from odoo import _
 from odoo.addons.report_aeroo.extra_functions import aeroo_util
 from odoo.tools.misc import formatLang, format_date
+from odoo.tools import html2plaintext
 from types import SimpleNamespace
+
+
+@aeroo_util('html2plaintext')
+def _html2plaintext(report, html, body_id=None, encoding='utf-8'):
+    return html2plaintext(html, body_id, encoding)
 
 
 @aeroo_util('set')
