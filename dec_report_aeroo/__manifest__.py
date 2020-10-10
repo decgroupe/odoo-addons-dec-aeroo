@@ -6,6 +6,7 @@
     'summary': '''Root report module for DEC''',
     'depends': [
         'report_aeroo',  # Extra-functions added at init
+        'res_users_signature',
     ],
     'data': [],
     'installable': True
