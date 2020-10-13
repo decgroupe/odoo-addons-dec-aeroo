@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-08 21:05+0000\n"
-"PO-Revision-Date: 2020-10-08 21:05+0000\n"
+"POT-Creation-Date: 2020-10-13 20:11+0000\n"
+"PO-Revision-Date: 2020-10-13 20:11+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: dec_report_aeroo
-#: code:addons/dec_report_aeroo/report_aeroo_extra_functions.py:127
+#: code:addons/dec_report_aeroo/report_aeroo_extra_functions.py:133
 #, python-format
 msgid "APE {}"
 msgstr ""
@@ -85,7 +85,7 @@ msgid "Report Subtotal"
 msgstr "Sous-total du rapport"
 
 #. module: dec_report_aeroo
-#: code:addons/dec_report_aeroo/report_aeroo_extra_functions.py:125
+#: code:addons/dec_report_aeroo/report_aeroo_extra_functions.py:131
 #, python-format
 msgid "SIRET {}"
 msgstr ""
@@ -101,7 +101,7 @@ msgid "This allows the seller to hide the entire printed line"
 msgstr "Ceci permet d'enlever complétement cette ligne du rapport"
 
 #. module: dec_report_aeroo
-#: code:addons/dec_report_aeroo/report_aeroo_extra_functions.py:129
+#: code:addons/dec_report_aeroo/report_aeroo_extra_functions.py:135
 #, python-format
 msgid "VAT {}"
 msgstr "TVA {}"
