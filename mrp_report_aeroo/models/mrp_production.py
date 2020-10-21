@@ -36,7 +36,16 @@ class MrpProduction(models.Model):
             data = {}
 
         lines = []
-        for move in self.move_raw_ids:
+        for move in self.move_raw_ids.filtered(lambda x: x.state != 'cancel'):
+            received = False
+            reserved = (move.reserved_availability == move.product_uom_qty)
+            if move.procure_method == 'make_to_order':
+                if all(
+                    m.state in ['cancel', 'done'] for m in move.move_orig_ids
+                ):
+                    received = True
+            elif move.procure_method == 'make_to_stock':
+                received = reserved
             # Create a dummy python object to hold editable data without
             # updating database content
             line = SimpleNamespace(
@@ -53,7 +62,8 @@ class MrpProduction(models.Model):
                 picking_id=move.picking_id,
                 reference=move.reference,
                 state=move.state,
-                received=(move.reserved_availability == move.product_uom_qty),
+                received=received,
+                reserved=reserved,
                 status=move.get_mrp_status(False),
             )
             lines.append(line)
