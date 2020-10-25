@@ -10,6 +10,22 @@
                 <group>
                     <field name="message"/>
                 </group>
+                <p class="oe_grey">
+                    Select move states that will be displayed on the
+                    picking report.
+                </p>
+                <group>
+                    <group>
+                        <field name="state_cancel"/>
+                        <field name="state_draft"/>
+                        <field name="state_waiting"/>
+                    </group>
+                    <group>
+                        <field name="state_confirmed"/>
+                        <field name="state_assigned"/>
+                        <field name="state_done"/>
+                    </group>
+                </group>
                 <footer>
                     <button name="print_report" string="Print picking" 
                         type="object" class="btn-primary" 
