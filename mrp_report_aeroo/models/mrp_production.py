@@ -40,7 +40,7 @@ class MrpProduction(models.Model):
             received = False
             reserved = (move.reserved_availability == move.product_uom_qty)
             if move.procure_method == 'make_to_order':
-                if all(
+                if move.move_orig_ids and all(
                     m.state in ['cancel', 'done'] for m in move.move_orig_ids
                 ):
                     received = True
