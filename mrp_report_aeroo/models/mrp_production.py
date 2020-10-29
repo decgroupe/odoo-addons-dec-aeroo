@@ -11,7 +11,7 @@ class MrpProduction(models.Model):
 
     @api.multi
     def _get_aeroo_report_filename(self):
-        names = [x.name for x in self]
+        names = [x.name or str(x.id) for x in self]
         res = '-'.join(names)
         return res
 
@@ -34,12 +34,13 @@ class MrpProduction(models.Model):
     def print_move_raw_lines(self, data=None):
         if data is None:
             data = {}
-
         lines = []
         for move in self.move_raw_ids.filtered(lambda x: x.state != 'cancel'):
             received = False
             reserved = (move.reserved_availability == move.product_uom_qty)
-            if move.procure_method == 'make_to_order':
+            if move.state == 'done':
+                received = True
+            elif move.procure_method == 'make_to_order':
                 if move.move_orig_ids and all(
                     m.state in ['cancel', 'done'] for m in move.move_orig_ids
                 ):
