@@ -12,6 +12,7 @@
         'mrp_traceability',
         'mrp_note',
         'mrp_workflow_dec',
+        'mrp_picked_rate',
         'dec_report_aeroo',
     ],
     'data':
