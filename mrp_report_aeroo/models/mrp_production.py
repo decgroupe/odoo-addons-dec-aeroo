@@ -40,8 +40,8 @@ class MrpProduction(models.Model):
             # Create a dummy python object to hold editable data without
             # updating database content
             line = SimpleNamespace(
-                pack=False,
-                level=0,
+                pack=bool(move.pack_child_move_ids.ids),
+                level=move.pack_level,
                 move=move,
                 name=move.name,
                 product_id=move.product_id,

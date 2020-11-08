@@ -13,6 +13,7 @@
         'mrp_note',
         'mrp_workflow_dec',
         'mrp_picked_rate',
+        'mrp_product_pack',
         'dec_report_aeroo',
     ],
     'data':
