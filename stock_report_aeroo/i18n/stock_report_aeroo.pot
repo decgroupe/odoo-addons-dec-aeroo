@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-25 19:47+0000\n"
-"PO-Revision-Date: 2020-10-25 19:47+0000\n"
+"POT-Creation-Date: 2020-11-14 11:12+0000\n"
+"PO-Revision-Date: 2020-11-14 11:12+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgstr "Permet d'afficher du texte personnalisé"
 #. module: stock_report_aeroo
 #: model:ir.model.fields,field_description:stock_report_aeroo.field_stock_picking_custom_report__state_assigned
 msgid "Available"
-msgstr ""
+msgstr "Disponible"
 
 #. module: stock_report_aeroo
 #: model_terms:ir.ui.view,arch_db:stock_report_aeroo.stock_picking_custom_report_view
@@ -33,7 +33,7 @@ msgstr "Annuler"
 #. module: stock_report_aeroo
 #: model:ir.model.fields,field_description:stock_report_aeroo.field_stock_picking_custom_report__state_cancel
 msgid "Cancelled"
-msgstr ""
+msgstr "Annulé"
 
 #. module: stock_report_aeroo
 #: model:ir.model.fields,field_description:stock_report_aeroo.field_stock_picking_custom_report__create_uid
@@ -93,7 +93,7 @@ msgstr "Ordres de fabrication"
 #. module: stock_report_aeroo
 #: model:ir.model.fields,field_description:stock_report_aeroo.field_stock_picking_custom_report__state_draft
 msgid "New"
-msgstr ""
+msgstr "Nouveau"
 
 #. module: stock_report_aeroo
 #: model:ir.model.fields,field_description:stock_report_aeroo.field_stock_picking__original_creator_user_id
@@ -114,7 +114,8 @@ msgstr "Choisir les options"
 #: model_terms:ir.ui.view,arch_db:stock_report_aeroo.stock_picking_custom_report_view
 msgid "Select move states that will be displayed on the\n"
 "                    picking report."
-msgstr ""
+msgstr "Sélectionner les états des mouvements qui seront affichés sur le\n"
+"                    bon de transfert."
 
 #. module: stock_report_aeroo
 #: model:ir.model,name:stock_report_aeroo.model_stock_move
@@ -129,17 +130,17 @@ msgstr "Transfert"
 #. module: stock_report_aeroo
 #: model:ir.model.fields,field_description:stock_report_aeroo.field_stock_picking_custom_report__state_waiting
 msgid "Waiting Another Move"
-msgstr ""
+msgstr "En attente d'un autre mouvement"
 
 #. module: stock_report_aeroo
 #: model:ir.model.fields,field_description:stock_report_aeroo.field_stock_picking_custom_report__state_confirmed
 msgid "Waiting Availability"
-msgstr ""
+msgstr "Attente de disponibilité"
 
 #. module: stock_report_aeroo
 #: model:ir.model.fields,help:stock_report_aeroo.field_stock_picking_custom_report__state_assigned
 msgid "assigned or partially_available"
-msgstr ""
+msgstr "assigned ou partially_available"
 
 #. module: stock_report_aeroo
 #: model:ir.model.fields,help:stock_report_aeroo.field_stock_picking_custom_report__state_cancel
