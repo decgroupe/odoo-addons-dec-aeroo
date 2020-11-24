@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <report id="overdue_reminder_step_report"
+            model="overdue.reminder.step"
+            string="Overdue Letter"
+            report_type="qweb-pdf"
+            name="account_invoice_overdue_reminder.report_overdue_reminder"
+            file="account_invoice_overdue_reminder.report_overdue_reminder"
+            print_report_name="(object._get_report_base_filename())"
+    />
+
+    <record model="ir.actions.report" id="overdue_reminder_report">
+        <field name="name">📄 Overdue Reminder</field>
+        <field name="type">ir.actions.report</field>
+        <field name="model">overdue.reminder.step</field>
+        <field name="report_name">overdue_reminder_report</field>
+        <field name="report_type">aeroo</field>
+        <field name="print_report_name">(object._get_aeroo_report_filename())</field>
+        <field name="aeroo_in_format">odt</field>
+        <field name="aeroo_out_format_id" ref="report_aeroo.aeroo_mimetype_pdf_odt"/>
+        <field name="aeroo_template_source">file</field>
+        <field name="aeroo_lang_eval">o.partner_id.lang</field>
+        <field name="aeroo_country_eval">o.partner_id.country_id</field>
+        <field name="aeroo_currency_eval" eval="None"/>
+        <field name="aeroo_template_path">account_invoice_overdue_reminder_report_aeroo/report/overdue_reminder.odt</field>
+        <field name="attachment_use" eval="False"/>
+    </record>
+
+</odoo>
