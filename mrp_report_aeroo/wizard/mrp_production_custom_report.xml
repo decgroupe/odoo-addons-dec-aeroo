@@ -21,7 +21,7 @@
     </record>
 
     <act_window id="act_window_mrp_production_custom_report"
-        name="🧙‍♂️Wizard ..."
+        name="🧙‍♂️ Wizard ..."
         src_model="mrp.production"
         res_model="mrp.production.custom.report"
         key2="client_print_multi"

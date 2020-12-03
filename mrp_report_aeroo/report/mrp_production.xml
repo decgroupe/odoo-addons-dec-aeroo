@@ -2,7 +2,7 @@
 <odoo>
 
     <record model="ir.actions.report" id="mrp_production_report">
-        <field name="name">📄Manufacturing Order</field>
+        <field name="name">📄 Manufacturing Order</field>
         <field name="type">ir.actions.report</field>
         <field name="model">mrp.production</field>
         <field name="report_name">mrp_production_report</field>

@@ -2,7 +2,7 @@
 <odoo>
 
     <record model="ir.actions.report" id="account_invoice_report">
-        <field name="name">📄Account Invoice</field>
+        <field name="name">📄 Account Invoice</field>
         <field name="type">ir.actions.report</field>
         <field name="model">account.invoice</field>
         <field name="report_name">account_invoice_report</field>

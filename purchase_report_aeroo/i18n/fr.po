@@ -124,10 +124,10 @@ msgstr "Additionner les montants des lignes qui possèdent les mêmes articles, 
 
 #. module: purchase_report_aeroo
 #: model:ir.actions.report,name:purchase_report_aeroo.purchase_order_report
-msgid "📄Purchase Order"
-msgstr "📄Commande fournisseur"
+msgid "📄 Purchase Order"
+msgstr "📄 Commande fournisseur"
 
 #. module: purchase_report_aeroo
 #: model:ir.actions.act_window,name:purchase_report_aeroo.act_window_purchase_custom_report
-msgid "🧙‍♂️Wizard ..."
-msgstr "🧙‍♂️Assistant ..."
+msgid "🧙‍♂️ Wizard ..."
+msgstr "🧙‍♂️ Assistant ..."

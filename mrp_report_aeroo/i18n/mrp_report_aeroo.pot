@@ -97,11 +97,11 @@ msgstr "Choisir les options"
 
 #. module: mrp_report_aeroo
 #: model:ir.actions.report,name:mrp_report_aeroo.mrp_production_report
-msgid "📄Manufacturing Order"
-msgstr "📄Ordre de fabrication"
+msgid "📄 Manufacturing Order"
+msgstr "📄 Ordre de fabrication"
 
 #. module: mrp_report_aeroo
 #: model:ir.actions.act_window,name:mrp_report_aeroo.act_window_mrp_production_custom_report
-msgid "🧙‍♂️Wizard ..."
-msgstr "🧙‍♂️Assistant ..."
+msgid "🧙‍♂️ Wizard ..."
+msgstr "🧙‍♂️ Assistant ..."
 

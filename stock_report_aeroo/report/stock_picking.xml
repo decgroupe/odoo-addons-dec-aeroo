@@ -2,7 +2,7 @@
 <odoo>
 
     <record model="ir.actions.report" id="stock_picking_report">
-        <field name="name">📄Stock Picking</field>
+        <field name="name">📄 Stock Picking</field>
         <field name="type">ir.actions.report</field>
         <field name="model">stock.picking</field>
         <field name="report_name">stock_picking_report</field>

@@ -27,6 +27,6 @@ msgstr "Ligne de bons de commande"
 
 #. module: sale_report_aeroo
 #: model:ir.actions.report,name:sale_report_aeroo.sale_order_report
-msgid "📄Sale Order"
-msgstr "📄Commande de vente"
+msgid "📄 Sale Order"
+msgstr "📄 Commande de vente"
 

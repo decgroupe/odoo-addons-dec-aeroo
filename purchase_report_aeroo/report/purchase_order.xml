@@ -2,7 +2,7 @@
 <odoo>
 
     <record model="ir.actions.report" id="purchase_order_report">
-        <field name="name">📄Purchase Order</field>
+        <field name="name">📄 Purchase Order</field>
         <field name="type">ir.actions.report</field>
         <field name="model">purchase.order</field>
         <field name="report_name">purchase_order_report</field>

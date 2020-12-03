@@ -22,6 +22,6 @@ msgstr "Modèle d'article"
 
 #. module: product_report_aeroo
 #: model:ir.actions.report,name:product_report_aeroo.product_template_report
-msgid "📄Product Label"
-msgstr "📄Étiquette produit"
+msgid "📄 Product Label"
+msgstr "📄 Étiquette produit"
 

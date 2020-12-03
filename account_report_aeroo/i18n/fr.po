@@ -28,5 +28,5 @@ msgstr "Ligne de facture"
 
 #. module: account_report_aeroo
 #: model:ir.actions.report,name:account_report_aeroo.account_invoice_report
-msgid "📄Account Invoice"
-msgstr "📄Facture"
+msgid "📄 Account Invoice"
+msgstr "📄 Facture"

@@ -23,5 +23,5 @@ msgstr "Paiements"
 
 #. module: account_payment_report_aeroo
 #: model:ir.actions.report,name:account_payment_report_aeroo.account_payment_report
-msgid "📄Payment summary"
-msgstr "📄Reçu de paiement"
+msgid "📄 Payment summary"
+msgstr "📄 Reçu de paiement"

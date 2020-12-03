@@ -173,10 +173,10 @@ msgstr "waiting"
 
 #. module: stock_report_aeroo
 #: model:ir.actions.report,name:stock_report_aeroo.stock_picking_report
-msgid "📄Stock Picking"
-msgstr "📄Bon de transfert"
+msgid "📄 Stock Picking"
+msgstr "📄 Bon de transfert"
 
 #. module: stock_report_aeroo
 #: model:ir.actions.act_window,name:stock_report_aeroo.act_window_stock_picking_custom_report
-msgid "🧙‍♂️Wizard ..."
-msgstr "🧙‍♂️Assistant ..."
+msgid "🧙‍♂️ Wizard ..."
+msgstr "🧙‍♂️ Assistant ..."
