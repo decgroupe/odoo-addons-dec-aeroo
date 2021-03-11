@@ -49,3 +49,16 @@ class StockPicking(models.Model):
                 picking.original_creator_user_id = picking.create_uid.id
             else:
                 picking.original_creator_user_id = False
+
+    partner_invoice_id = fields.Many2one(
+        comodel_name='res.partner',
+        compute='_compute_partner_invoice_id',
+        string="Invoicing contact",
+    )
+
+    @api.multi
+    def _compute_partner_invoice_id(self):
+        for picking in self.filtered('group_id'):
+            sale_order_id = picking.group_id.sale_id
+            if sale_order_id:
+                picking.partner_invoice_id = sale_order_id.partner_invoice_id

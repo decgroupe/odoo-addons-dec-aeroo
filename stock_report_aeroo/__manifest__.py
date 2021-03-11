@@ -10,6 +10,7 @@
         'stock_mrp',
         'dec_report_aeroo',
         'sale_report_aeroo',
+        'procurement_traceability',
     ],
     'data':
         [
