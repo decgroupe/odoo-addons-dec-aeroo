@@ -1,6 +1,6 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* software_license_report_aeroo
+#	* software_license_pass_report_aeroo
 #
 msgid ""
 msgstr ""
@@ -15,13 +15,13 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
-#. module: software_license_report_aeroo
-#: model:ir.model,name:software_license_report_aeroo.model_software_license
-msgid "License"
+#. module: software_license_pass_report_aeroo
+#: model:ir.model,name:software_license_pass_report_aeroo.model_software_license_pass
+msgid "Application Pass"
 msgstr ""
 
-#. module: software_license_report_aeroo
-#: model:ir.actions.report,name:software_license_report_aeroo.software_license_report
-msgid "📄 License (customer information)"
+#. module: software_license_pass_report_aeroo
+#: model:ir.actions.report,name:software_license_pass_report_aeroo.software_license_pass_report
+msgid "📄 Pass"
 msgstr ""
 
