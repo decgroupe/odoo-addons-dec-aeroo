@@ -16,18 +16,22 @@ class StockPickingCustomReport(models.TransientModel):
 
     state_draft = fields.Boolean(
         'New',
+        default=True,
         help='draft',
     )
     state_cancel = fields.Boolean(
         'Cancelled',
+        default=True,
         help='cancel',
     )
     state_waiting = fields.Boolean(
         'Waiting Another Move',
+        default=True,
         help='waiting',
     )
     state_confirmed = fields.Boolean(
         'Waiting Availability',
+        default=True,
         help='confirmed',
     )
     state_assigned = fields.Boolean(
@@ -40,6 +44,11 @@ class StockPickingCustomReport(models.TransientModel):
         default=True,
         help='done',
     )
+    show_advanced_status = fields.Boolean(
+        default=False,
+        help="This status should not be displayed to a customer since "
+        "internal informations can appears in it"
+    )
 
     @api.multi
     def print_report(self):
@@ -50,6 +59,8 @@ class StockPickingCustomReport(models.TransientModel):
         stock_picking = self.env['stock.picking'].browse(
             context.get('active_ids')
         )
+        # Override default report context
+        context['state'] = []
 
         states = []
         if self.state_draft:

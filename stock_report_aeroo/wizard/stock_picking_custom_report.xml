@@ -9,6 +9,8 @@
             <form string="Select Options">
                 <group>
                     <field name="message"/>
+                    <field name="show_advanced_status"/>
+                    
                 </group>
                 <p class="oe_grey">
                     Select move states that will be displayed on the

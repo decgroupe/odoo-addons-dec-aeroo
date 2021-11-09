@@ -20,6 +20,8 @@
                 Assigning them is like executing IrActionsReport.create_action() -->
         <field name="binding_model_id" ref="stock.model_stock_picking" />
         <field name="binding_type">report</field>
+        <!-- Using `report_context` module -->
+        <field name="context">{'state': ('assigned', 'done')}</field>
     </record>
 
 </odoo>
