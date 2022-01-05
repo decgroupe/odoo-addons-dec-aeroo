@@ -16,6 +16,7 @@ class ProductTemplate(models.Model):
         return res
 
     def get_qrcode_data(self):
+        self.ensure_one()
         res = {
             "id": self.id,
             "code": self.default_code,
@@ -26,6 +27,7 @@ class ProductTemplate(models.Model):
         return json.dumps(res)
 
     def get_manufacturer(self):
+        self.ensure_one()
         res = ''
         categ_id = self.categ_id
         if categ_id:

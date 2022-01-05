@@ -12,7 +12,8 @@
     ],
     'data':
         [
-            'report/product_template.xml',
+            'report/product_product_label.xml',
+            'report/product_template_label.xml',
         ],
     'installable': True
 }
